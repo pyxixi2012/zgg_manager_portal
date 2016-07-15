@@ -1,0 +1,158 @@
+<style type="text/css">
+.form-control{width: 94%;}
+.margin-left-15{margin-left: -15px;}
+</style>
+
+
+<tabset justified="true" class="tab-container container-fluid">
+	<tab heading="全部业务">
+		<div class="panel-body">
+			<form class="form-inline" role="form">
+				<div class="row m-b">
+					<div class="col-md-2">
+						<div class="form-group">
+							<label for="exampleInputEmail2">订单号：</label>
+							<input type="text" class="form-control input-sm" id="exampleInputEmail2" placeholder="订单号">
+						</div>
+					</div>
+					<div class="col-md-5">
+						<div class="form-group">
+							<label>下单时间：</label>
+							<div class="input-group">
+								<div class="input-group col-md-5">
+									<input type="text" class="form-control input-sm" datepicker-popup="{{format}}" ng-model="beginDate"
+									is-open="opened" datepicker-options="dateOptions" ng-required="true"
+									close-text="Close"/>
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default  input-sm" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i>
+										</button>
+									</span>
+								</div>
+								<label style="margin: 0 5px"> -- </label>
+								<div class="input-group col-md-5">
+									<input type="text" class="form-control input-sm" id="exampleInputPassword22" datepicker-popup="{{format}}" ng-model="endDate" is-open="opened2" datepicker-options="dateOptions" ng-required="true" close-text="Close"/>
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default input-sm" ng-click="open2($event)"><i class="glyphicon glyphicon-calendar"></i>
+										</button>
+									</span>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="col-md-5">
+						<div class="form-group">
+							<label>支 付 时 间 ：</label>
+							<div class="input-group">
+								<div class="input-group col-md-5">
+									<input type="text" class="form-control input-sm" datepicker-popup="{{format}}" ng-model="beginDate"
+									is-open="opened" datepicker-options="dateOptions" ng-required="true"
+									close-text="Close"/>
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default  input-sm" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i>
+										</button>
+									</span>
+								</div>
+								<label style="margin: 0 5px"> -- </label>
+								<div class="input-group col-md-5">
+									<input type="text" class="form-control input-sm" id="exampleInputPassword22" datepicker-popup="{{format}}" ng-model="endDate" is-open="opened2" datepicker-options="dateOptions" ng-required="true" close-text="Close"/>
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default input-sm" ng-click="open2($event)"><i class="glyphicon glyphicon-calendar"></i>
+										</button>
+									</span>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<div class="row m-b">
+					<div class="col-md-2">
+						<div class="form-group">
+							<label for="exampleInputEmail2">手机号：</label>
+							<input type="text" class="form-control input-sm" id="exampleInputEmail2" placeholder="手机号">
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="form-group">
+							<label for="exampleInputEmail2">业务名称：</label>
+							<input type="text" class="form-control input-sm" id="exampleInputEmail2" placeholder="业务名称">
+						</div>
+					</div>
+					<div class="col-md-2 col-md-offset-3">
+						<div class="form-group">
+							<label for="exampleInputEmail2">联系人名称：</label>
+							<input type="text" class="form-control input-sm" id="exampleInputEmail2" placeholder="联系人名称">
+						</div>
+					</div>
+				</div>		
+			</form>
+		</div>
+		<div class="panel panel-default">
+		<div class="panel-heading" >
+
+			
+			<div class="text-center strong panel-title" style="line-height: 30px">功能区</div>
+		</div>
+		<div class="table-responsive">
+			<table class="table table-striped b-t b-light">
+				<thead>
+					<tr>
+						<th style="width:20px;">
+							<label class="i-checks m-b-none">
+	                            <input type="checkbox"><i></i>
+	                        </label>
+						</th>
+						<th>订单号／业务类型／主体</th>
+						<th>业务名称／属性／增值业务</th>
+						<th>联系人姓名／手机号</th>
+						<th>支付状态／业务状态／订单状态</th>
+						<th>订单金额／支付金额</th>
+						<th>下单时间／支付时间</th>
+						<th>服务商／客服</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ui-sref="app.orderDetail">
+						<td><label class="i-checks m-b-none v-middle" style="margin-top: 15px"><input type="checkbox" name="post[]"><i></i></label></td>
+						<td><div>12345678910</div><div>国内普通商标注册</div><div>XXX科技有限公司</div></td>
+						<td><div>知果果</div><div>无</div><div>A保，加急</div></td>
+						<td><div>孙瑞淞</div><div>18515163416</div></td>
+						<td><div>待支付</div><div>业务审核</div><div>正常</div></td>
+						<td><div>600.00</div><div>400.00</div></td>
+						<td><div>2016-07-13 09:07:08</div><div>2016-07-13 09:07:08</div></td>
+						<td><div>A服务商</div><div>测试客服</div></td>
+						
+					</tr>
+					
+				</tbody>
+			</table>
+		</div>
+		<footer class="panel-footer">
+			<div class="row">
+				<div class="col-md-3"><button class="btn btn-sm btn-default">变更服务商</button> <button class="btn btn-sm btn-default">变更订单状态</button> </div>
+				<div class="col-md-4 text-center text-center-xs col-md-offset-">  
+
+					<ul class="pagination pagination-sm m-t-none m-b-none">
+						<li><a href><i class="fa fa-chevron-left"></i></a></li>
+						<li><a href>1</a></li>
+						<li><a href>2</a></li>
+						<li><a href>3</a></li>
+						<li><a href>4</a></li>
+						<li><a href>5</a></li>
+						<li><a href><i class="fa fa-chevron-right"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	</tab>
+	<tab heading="商标">商标</tab>
+	<tab heading="版权">版权</tab>
+	<tab heading="专利">专利</tab>
+	<tab heading="其他">其他</tab>
+
+
+</tabset>
+

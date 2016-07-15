@@ -1,0 +1,24 @@
+<!-- navbar -->
+<div data-ng-include=" 'view/common/header.html' " class="app-header navbar">
+</div>
+<!-- / navbar -->
+<!-- menu -->
+<div data-ng-include=" 'view/common/aside.html' " class="app-aside hidden-xs {{app.settings.asideColor}}">
+</div>
+
+<!-- content -->
+<div class="app-content">
+	<div>
+        <ul class="breadcrumb bg-white b-a">
+          	<li><a href><i class="fa fa-home"></i> Home</a></li>
+         	<li><a href>用户管理</a></li>
+          	<li class="active">用户列表</li>
+        </ul>
+    </div>
+    <div ui-butterbar></div>
+    <a href class="off-screen-toggle hide" ui-toggle-class="off-screen" data-target=".app-aside" ></a>
+    <div class="app-content-body fade-in-up" ui-view></div>
+</div>
+<!-- /content -->
+<div data-ng-include=" 'view/common/settings.html' " class="settings panel panel-default">
+</div>

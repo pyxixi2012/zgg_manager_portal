@@ -1,0 +1,78 @@
+<form name="form-contact" class="form-validation ng-pristine ng-invalid ng-invalid-required ng-valid-email ng-valid-url" ng-submit="ok()">
+       <div class="panel panel-default no-borders">
+        <div class="panel-heading">
+            <span class="h4">新增商品</span>
+        </div>
+        <div class="panel-body">
+            <div class="form-group pull-in clearfix">
+                <div class="col-sm-6">
+                    <label style="display: inline-block;width:55px;">商品名称</label>
+                    <input type="text" class="form-control ng-pristine ng-invalid ng-invalid-required ng-touched" ng-model="contact.telphone" required="" style="display: inline-block;width:80%">
+                </div>
+                <!--<div class="col-sm-6">
+                    <label>注册来源</label>
+                    <select name="account" class="form-control m-b">
+                        <option value="option 1">option 1</option>
+                        <option value="option 2">option 2</option>
+                        <option value="option 3">option 3</option>
+                        <option value="option 4">option 4</option>
+                    </select>
+                </div>-->
+            </div>
+            <div class="form-group pull-in clearfix">
+                <div class="col-sm-6">
+                    <label style="display: inline-block;width:55px;">官&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;费</label>
+                    <input type="text" class="form-control ng-pristine ng-invalid ng-invalid-required ng-touched"  required="" style="display: inline-block;width:80%">
+                </div>
+            </div>
+            <div class="form-group pull-in clearfix">
+                <div class="col-sm-6">
+                    <label style="display: inline-block;width:55px;">服&nbsp;务&nbsp;费</label>
+                    <input type="text" class="form-control ng-pristine ng-invalid ng-invalid-required ng-touched"   required="" style="display: inline-block;width:80%">
+                </div>
+            </div>
+            <div class="form-group">
+                <label  style="display: inline-block;width:55px;">授权对象</label>
+                <select name="account" class="form-control m-b" style="display: inline-block;width:80%;">
+                    <option value="option 1">自营服务商</option>
+                    <option value="option 2">入住服务商</option>
+                    <option value="option 3">全体服务商</option>
+                </select>
+            </div>
+            <div class="form-group pull-in clearfix">
+                <div class="col-sm-6">
+                    <label>归属类别</label>
+                    <select name="account" class="form-control m-b">
+                        <option value="option 1">一级分类</option>
+                        <option value="option 2">商标</option>
+                        <option value="option 3">专利</option>
+                        <option value="option 4">著作权</option>
+                    </select>
+                    <select name="account" class="form-control m-b">
+                        <option value="option 1">option 1</option>
+                        <option value="option 2">option 2</option>
+                        <option value="option 3">option 3</option>
+                        <option value="option 4">option 4</option>
+                    </select>
+                </div>
+
+                <!--<div class="col-sm-6">
+                    <label>标签类别</label>
+                    <select name="account" class="form-control m-b">
+                        <option value="option 1">option 1</option>
+                        <option value="option 2">option 2</option>
+                        <option value="option 3">option 3</option>
+                        <option value="option 4">option 4</option>
+                    </select>
+                </div>-->
+            </div>
+            <div class="form-group">
+                <label>备注信息</label><textarea class="form-control" rows="6" placeholder="非必填项"></textarea>
+            </div>
+            <div class="text-right">
+                <button type="button" class="btn btn-default" ng-click="cancel()">取消</button>
+                <button type="submit" class="btn btn-success">确定</button>
+            </div>
+        </div>
+       </div>
+</form>
